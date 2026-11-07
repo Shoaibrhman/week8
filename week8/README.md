@@ -72,4 +72,4 @@ Note: `Dark spots spreading on leaves. Call 0300-1234567`
 6. **4-person team:** 4 x 3 / 2 = 6 communication channels.
 
 ### Reflection
-[Write 2 to 3 sentences of your own: what surprised you, for example the border-only accuracy of 0.238 vs 0.026 chance, or that p50 was 119 ms rather than the 45 ms in the lab example.]
+Turning my Week 6 crop-disease model into an API showed me that a good notebook score is not the same as a working product: the service also has to reject bad files (415, 413, 400), hide personal data like phone numbers, and be tested automatically, and all 8 of my tests now pass. My benchmark gave p50 119 ms and p95 123 ms on an i7-1355U CPU, which is slower than the 45 ms in the lab example, so I learned to report my own hardware instead of copying someone else's numbers. The biggest lesson from earlier weeks still applies: my border-only test scored 0.238 against 0.026 by chance, so the model may use the background and not only the disease, which is why the API says a qualified agronomist makes the final decision.
